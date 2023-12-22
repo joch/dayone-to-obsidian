@@ -1,0 +1,1 @@
+- {{ creationDate.split('T')[1].split(':')[0] }}:{{ creationDate.split('T')[1].split(':')[1] }} {{ text | replace('\n', '<br>') }}{% if location %}<br><br>Location: [{{ location.localityName }}, {{ location.country }}](geo:{{ location.latitude }},{{ location.longitude }}){% endif %}
